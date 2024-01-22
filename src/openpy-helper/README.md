@@ -76,8 +76,8 @@ poetry run python
 ```
 then you can use the package, for example
 ```
-from openpyxl_helper.openpyxlhelper import OpenpyxlHelper
-OpenpyxlHelper.get_sheet_names_by_file_path("../../test/file/ReadTest.xlsx")
+from openpyxl_helper.read_helper import ReadHelper
+ReadHelper.get_sheet_names_by_file_path("../../test/file/ReadTest.xlsx")
 ```
 
 ### Run test
