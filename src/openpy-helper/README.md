@@ -1,8 +1,14 @@
-# Setup
+# openpyxl-helper
 
-## Install poetry
+openpyxl-helper is a simple extension of [openpyxl](https://openpyxl.readthedocs.io/en/stable/) which is a Python library to read/write Excel xlsx/xlsm/xltx/xltm files.
 
-#### Install By officall installer
+This project collects some usually used operations for Excel files.
+
+## Install and setup poetry
+
+### Install poetry
+
+Install By officall installer
 
 ##### macOS / Linux / WSL（Windows Subsystem for Linux）
 ```
@@ -13,7 +19,9 @@ curl -sSL https://install.python-poetry.org | python3 -
 (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
 ```
 
-#### Set environment path
+### Setup poetry
+
+#### set path
 
 ##### macOS / Linux / WSL（Windows Subsystem for Linux）
 ```
@@ -52,15 +60,15 @@ poetry env use 3.8
 poetry shell
 ```
 
-#### exit
+### exit
 
 ```
 exit
 ```
 
-# Execute
+## Execute
 
-## Run python
+### Run python
 run python in the virtual enviroment
 
 ```
@@ -72,7 +80,7 @@ from openpyxl_helper.openpyxlhelper import OpenpyxlHelper
 OpenpyxlHelper.get_sheet_names_by_file_path("../../test/file/ReadTest.xlsx")
 ```
 
-## Run test
+### Run test
 
 ```
 poetry run python -m unittest
